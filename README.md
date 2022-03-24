@@ -21,8 +21,8 @@ Meanwhile I manage all PVE nodes with Ansible and usually have no need to restor
 nodes failed at once. But having a full cluster config backup is still useful and makes PVE admins sleep well at night (or day).
 
 ### Backup
-* Download the [script](https://raw.githubusercontent.com/DerDanilo/proxmox-stuff/master/prox_config_backup.sh)  
-```cd /root/; wget -qO- https://raw.githubusercontent.com/DerDanilo/proxmox-stuff/master/prox_config_backup.sh```
+* Download the [script](https://raw.githubusercontent.com/mewejo/proxmox-stuff/master/prox_config_backup.sh)  
+```cd /root/; wget -qO- https://raw.githubusercontent.com/mewejo/proxmox-stuff/master/prox_config_backup.sh```
 * Set the permanent backups directory environment variable ```export BACK_DIR="/path/to/backup/directory"```
 * Make the script executable ```chmod +x ./prox_config_backup.sh```
 * Shut down ALL VMs + LXC Containers if you want to go the save way. (Not required)
